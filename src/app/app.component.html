@@ -1,4 +1,17 @@
-<div class="container">
-  <app-main></app-main>
+<h1 appBold>ngIF</h1>
+<p *ngIf="!show">Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet consectetur.</p>
+<h1 appBold>NgFor & ngStyle</h1>
+<ng-container *ngFor="let car of cars">
+  <ul>
+    <li appBold [ngStyle]="{ color: car.name.length > 3 ? 'red' : 'green' }">
+      {{ car.name }}
+    </li>
+  </ul>
+</ng-container>
+<h1>ngClass</h1>
+<div>
+  <p>Lorem, ipsum dolor.</p>
+  <p appBold>Lorem, ipsum dolor.</p>
 </div>
-<!-- <app-main></app-main> -->
+<app-main></app-main>
