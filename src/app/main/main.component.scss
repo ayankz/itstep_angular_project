@@ -1,0 +1,25 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 15px;
+  width: 500px;
+  border: 1px solid #3f51b5;
+  border-radius: 5px;
+  margin: 200px auto;
+}
+.example-form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+mat-form-field {
+  margin-bottom: 20px;
+}
+span {
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
